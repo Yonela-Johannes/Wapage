@@ -1,0 +1,8 @@
+.details {
+    animation: DetailsDisplay 1s ease;
+}
+@keyframes DetailsDisplay {
+    0%{
+        opacity: 0;
+    }
+}

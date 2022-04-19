@@ -1,0 +1,132 @@
+    /* DETAILS */
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #686363;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+.detailsTitle {
+    color:  rgb(51, 97, 116);
+}
+.detailsContent {
+    text-align: center;
+    align-items: center;
+}
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(235, 197, 197);
+    padding: 0 20px;
+}
+
+.skillsData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsDescription {
+    border-radius: 10px;
+    color: rgb(21, 50, 62);
+    padding: 10px;
+    border: .2px solid rgb(51, 97, 116);
+    margin: 5px 10px;
+}
+
+.detailsUserData {
+    display: flex;
+    align-items: center;
+}
+.skillsTitle{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+
+/* FOR MEDIUM DEVICES */
+
+@media screen and (min-width: 768px){
+    .skillsTitle{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        transform: rotate(90deg);
+    }
+    /* Details */
+    .skills{
+        background-image: url('../img/bg.gif');
+        background-attachment: fixed;
+    }
+    .skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        position: relative;
+        background-color: #686363;
+    }
+
+    .skillsCover{
+        /* background-color: rgba(0, 0, 0, 0.69); */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    .skillsData {
+        flex-direction: row;
+        text-align: center;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .detailsInfo{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    .skillsContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+        background-color: rgba(38, 38, 38, 0.59);
+    }
+    .detailsData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skillsDescription {
+        background-color: #979696b1;
+    }
+    .skillsDescription h2 {
+        font-size: 18px;
+        color: rgb(9, 29, 45);
+    }
+    .skillsDescription p{
+        font-size: 15px;
+    }
+    .speedometer{
+        font-size: 35px;
+        color: rgb(18, 50, 63);
+    }
+
+    .skillsContent{
+        background-color: #ffffff9f;
+    }
+}

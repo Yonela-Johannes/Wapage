@@ -1,0 +1,48 @@
+
+
+.topbar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--header-background);
+    border-bottom: .3px solid gray;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.navWrapperItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.logo {
+    display: none;
+}
+.itemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+}
+.itemContainer .icon{
+    font-size: 20px;
+      margin-left: 16px;
+      color: #ffffff;
+      padding: 2px;
+}
+.phone{
+    font-size: 16px;
+}
+.itemContainer span{
+    color: #ffffff;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background: var(--header-background);
+}
