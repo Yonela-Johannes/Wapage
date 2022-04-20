@@ -17,6 +17,12 @@ function Navbar() {
                         <MdOutlineAttachEmail className='icon' />
                         <span>johannesyonela@gmail.com</span>
                     </div>
+                    <div className='itemContainer'>                      
+                        <span>Currently Agile-Web-Developer At Codex</span>
+                    </div>
+                    <div className='itemContainer'>
+                        <span>Based in Cape Town</span>
+                    </div>
                 </div>
             </div>
         </div>

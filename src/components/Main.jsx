@@ -7,7 +7,7 @@ import { RiWhatsappFill} from "react-icons/ri";
 import { useState } from 'react';
 
 function Main() {
-    const [aboutDisplay, setAboutDisplay] = useState(false)
+    const [aboutDisplay, setAboutDisplay] = useState(true)
     const [serviceDisplay, setServiceDiplay] = useState(false)
 
     const handleClick = () => setAboutDisplay(!aboutDisplay)

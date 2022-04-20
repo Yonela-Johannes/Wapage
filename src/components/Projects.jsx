@@ -1,6 +1,6 @@
 import './landing.css'
 
-function Landing() {
+function Projects() {
   return (
     <div className='landingMainContainer'>
       <div>
@@ -18,4 +18,4 @@ function Landing() {
   )
 }
 
-export default Landing
+export default Projects
