@@ -1,20 +1,18 @@
-import './landing.css'
+import  SwiperSlider from './SwiperSlider'
+import './projects.css'
 
-function Projects() {
+
+const Projects = () => {
+
+
   return (
-    <div className='landingMainContainer'>
-      <div>
-        <div className='landing'>
-          <h1 className='landingTitle'>Creative Developer</h1>
-          <div className='landingContainer'>
-            <div className='landingContainerBox'>
+        <div className='projectsMainContainer'>
+          <h1 className='projectsTitle'>Creative Developer</h1>
+              <h1>Frontend</h1>
+              <div className='swiper'>
+                <SwiperSlider />
             </div>
-            <div className='landingContainerBoxTwo'>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
   )
 }
 

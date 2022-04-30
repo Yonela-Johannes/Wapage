@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 function Main() {
     const [aboutDisplay, setAboutDisplay] = useState(true)
-    const [serviceDisplay, setServiceDiplay] = useState(false)
+    const [serviceDisplay, setServiceDiplay] = useState(true)
 
     const handleClick = () => setAboutDisplay(!aboutDisplay)
     const serviceClick = () => setServiceDiplay(!serviceDisplay)
@@ -16,29 +16,7 @@ function Main() {
     return (
         <div className='main'>
                 <section className="home section" id="home">
-                    <div className="homeContainer container">
-                        <div className="homeContent">
-                            <div className="homeSocial">
-                                <img src={displayImage} className="homeImg" alt="'user" />
-                                <div className="navListOne">
-                                    <div className="listItemsOne"><a href="tel:0840316308"><MdAddCall className="icon" /></a></div>
-                                    <div className="listItemsOne"><a href="mailto:johannesyonela@gmail.com"><MdEmail className="icon" /></a></div>
-                                    <div className="listItemsOne"><a href="https://github.com/Yonela-Johannes" rel="norefferer" target="_blank"><FaGithubAlt className="icon" /></a></div>
-                                    <div className="listItemsOne"><a href="https://wa.me/0693564159" target="_blank"rel="norefferer"><RiWhatsappFill className="icon" /></a></div>
-                                </div>
-                            </div>
-                            <div className="homeData">
-                                <h1 className="homeTitle">Yonela Johannes</h1>
-                                <h3 className="homeSubtitle">Agile Web-Developer</h3>
-                                <p className="homeDescription">With extensive knowlegde and high understanding of
-                                    Web-Application development, And producing quality work</p>
-                                <div className="button--flex">
-                                    My CV
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="homeButtons">
+                    {/* <div className="homeButtons">
                         <div className="homeButtonsContent">
                             <div onClick={handleClick} className={`homeButtonsData about ${aboutDisplay && 'buttonActive' } `}>
                                 <div className="button-float detailsButton">
@@ -51,9 +29,8 @@ function Main() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {aboutDisplay &&  <About aboutDisplay={aboutDisplay} /> }
-                    {serviceDisplay && <MyServices />}
+                    </div> */}
+                    {/* {aboutDisplay &&  <About aboutDisplay={aboutDisplay} /> } */}
                 </section>
         </div>
   )

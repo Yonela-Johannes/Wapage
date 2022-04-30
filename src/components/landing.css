@@ -1,43 +1,179 @@
-
 .landing{
-    /* min-height: 100vh; */
-    padding-top: 100px;
-    background-color: rgba(45, 11, 11, 0.476);
+    padding-top: 20px;
+    background-image: linear-gradient(to right bottom, #ffffff, #f7daf7, #f9f0f5, #ff92b5, #f8caca);
+}
+
+.homeTitle{
+    z-index: 1;
 }
 
 .landingTitle{
     font-size: 70px;
 }
 
+
+.homeContainer{
+    gap: .5rem;
+}
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5.2rem;
+    row-gap: 2rem;       
+}
+
+/* Home img */
+.homeImg {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-main-color);
+}
+
+.homeSocial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.homeData {
+    padding: 15px 20px;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+}
+
+.button--flex{
+    align-self: flex-start;
+}
+.button--flex{
+    display: inline-block;
+    color: var(--main-main-color);
+    cursor: pointer;
+    padding: .2rem;
+    border-bottom: .2px solid rgb(176, 176, 176);
+    font-weight: var(--font-medium);
+}
+.homeTitle{
+    font-size: var(--big-font-size);
+    color: var(--main-main-color);
+}
+.homeSubtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.homeDescription{
+    font-size: 16px;
+}
+
 @media screen and (min-width: 765px){
     .landingMainContainer {
+        padding-top: 100px;
+        min-height: 100vh;
+    }
+
+    .subHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 80px;
+    }
+    .subNavMenu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subMenuItem{
+        margin: 0 15px;
+        font-size: 18px;
+        color: rgb(61, 61, 61);
+        cursor: pointer;
     }
     .landing {
-        background-color: rgba(87, 87, 88, 0.86);
+        position: relative;
+        min-height: 70vh;
         display: flex;
+        /* background-color: rgb(196, 97, 4); */
+        justify-content: center;
     }
     h1.landingTitle{
-        color: rgb(255, 255, 255);
-        font-size: 100px;
+        color: rgb(0, 0, 0);
+        font-size: 50px;
+        padding: 0 10px;
+        background-color: white;
     }
 
     .landingContainer {
+        position: relative;
         display: flex;
-        background-color: rgba(255, 255, 255, 0.564);
-        height: 400px;
-        width: 800px;
+        background-color: #f7daf7;
+    }
+    .landingImage{
+        position: absolute;
+        width: 420px;
+        height: 300px;
+        right: 0;
+        bottom: 0;
+        padding: 5px;
+        z-index: 1;
+    }
+    .landingImageTwo{
+        position: absolute;
+        width: 420px;
+        height: 300px;
+        left: 0;
+        top: 0;
+        padding: 5px;
+        z-index: 2;
     }
     .landingContainerBox {
-        background-color: rgb(122, 121, 121);
+        /* background-color: rgb(68, 67, 67); */
+        width: 420px;
         height: 300px;
-        width: 300px;
-        border: .2px solid pink;
     }
     .landingContainerBoxTwo {
-        background-color: rgb(220, 166, 166);
+        /* background-color: rgb(32, 32, 32); */
+        width: 100px;
         height: 300px;
-        width: 300px;
         align-self: flex-end;
-        border: .2px solid gray;
-    }     
+    }
+    .homeContainer{
+        position: absolute;
+        /* bottom: 0; */
+        /* right:0; */
+    }
+    .homeSocial{
+        z-index: 3;       
+    }
+    .homeContent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: start;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .homeData {
+        max-width: 400px;
+    }
+    .homeDescription{
+        font-size: 18px;
+    }
+
+    .homeImg {
+        width: 200px;
+        height: 200px;
+        background-color: var(--main-main-color);
+        border-radius: 50%;
+        object-fit: cover;
+        animation: image 1.6s ease-in-out infinite;
+    }
+   
 }

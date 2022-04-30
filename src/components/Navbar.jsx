@@ -1,26 +1,40 @@
 import React from 'react'
-import './styles.css'
+import { Link } from 'react-router-dom'
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { MdOutlineAttachEmail } from "react-icons/md";
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebase-config'
+import './styles.css'
 
+function Navbar({ isAuth }) {
+    console.log(isAuth)
 
-function Navbar() {
+    const signout = () => {
+        signOut(auth).then(() => {
+            localStorage.clear()
+            window.location.pathname = "/"
+        })
+    }
+
   return (
     <div className='navbar'>
         <div className='topbar'>
             <div className='wrapper'>
                 <div className='navWrapperItems'>
-                    <h1 className='logo'>Yonela</h1>
                     <div className='itemContainer'>
-                        <BsFillTelephoneOutboundFill className='icon phone' />
-                        <span>+067 356 4159</span>
-                        <MdOutlineAttachEmail className='icon' />
-                        <span>johannesyonela@gmail.com</span>
+                        <span><BsFillTelephoneOutboundFill className='icon phone' />
+                        +067 356 4159</span>
+                        <span><MdOutlineAttachEmail className='icon' />
+                        johannesyonela@gmail.com</span>
                     </div>
                     <div className='itemContainer'>                      
-                        <span>Currently Agile-Web-Developer At Codex</span>
+                        <span>Currently: </span>
+                        <span>Agile-Web-Developer at Codex</span>
                     </div>
                     <div className='itemContainer'>
+                            <span>
+                                {!isAuth ? (<Link to="/login">Sign in</Link>) : (<button onClick={signout} className='logout'>Sign out</button>)}
+                            </span>
                         <span>Based in Cape Town</span>
                     </div>
                 </div>
