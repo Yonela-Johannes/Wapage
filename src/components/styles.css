@@ -1,19 +1,8 @@
-
-
 .topbar {
-    width: 100%;
-    min-height: var(--header-height);
-    background-image: var(--header-background);
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    padding: 2px 0;
-}
-
-.topbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2px 0;
 }
 
 .navWrapperItems {

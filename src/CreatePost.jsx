@@ -3,6 +3,7 @@ import { addDoc, collection } from "firebase/firestore"
 import { db, auth } from './firebase-config'
 import { useNavigate } from 'react-router-dom'
 import './createpost.css'
+import { RiSendPlane2Fill } from "react-icons/ri";
 
 function CreatePost() {
   let navigate = useNavigate()
@@ -34,12 +35,13 @@ function CreatePost() {
     <div className='createPost'>
       <div className="createPostContainer">
         <div className='inputGroup'>
-          {/* <label>Title:</label> */}
+          <label>Title:</label>
           <input className="titleInput" placeholder='enter title' value={title} onChange={e => setTitle(e.target.value)} /><br />
           <label>Image:</label>
           <input type='file' placeholder='...image'  value={postImage} onChange={e => setPostImage(e.target.value)} /><brr />
+          <label>Post</label>
           <textarea placeholder='post...' value={postText} onChange={e => setPostText(e.target.value)} />
-          <button onClick={submit}>Submit Post</button>
+          <button onClick={submit}><RiSendPlane2Fill /></button>
         </div>
       </div>
     </div>

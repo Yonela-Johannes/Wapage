@@ -1,5 +1,5 @@
 .landing{
-    padding-top: 20px;
+
     background-image: linear-gradient(to right bottom, #ffffff, #f7daf7, #f9f0f5, #ff92b5, #f8caca);
 }
 
@@ -74,8 +74,7 @@
 
 @media screen and (min-width: 765px){
     .landingMainContainer {
-        padding-top: 100px;
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
 
     .subHeader{

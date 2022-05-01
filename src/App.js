@@ -11,16 +11,24 @@ import Login from './Login';
 import Home from './Home';
 import './app.css';
 import Blog from './Blog';
-import { useState } from 'react';
-
+import React, { useState, useEffect } from 'react'
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const switchNav = () => {
+    window.scrollY > 10 && setScrollNav(false)
+  }
+
+  window.addEventListener('scroll', switchNav)
 
   return (
     <div className="app">
       <Router>
-        <Navbar isAuth={isAuth} />
+        <div className={!scrollNav ? 'staticNavbar' : 'scrollNavbar'}>
+          <Navbar isAuth={isAuth} />
+        </div>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/createpost' element={<CreatePost />} />

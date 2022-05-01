@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { MdOutlineAttachEmail } from "react-icons/md";
@@ -8,17 +7,16 @@ import './styles.css'
 
 function Navbar({ isAuth }) {
     console.log(isAuth)
-
+    // sign out from blog
     const signout = () => {
         signOut(auth).then(() => {
             localStorage.clear()
             window.location.pathname = "/"
         })
     }
-
   return (
-    <div className='navbar'>
-        <div className='topbar'>
+    <div className='topbar'>
+        <div className='navbar'>
             <div className='wrapper'>
                 <div className='navWrapperItems'>
                     <div className='itemContainer'>

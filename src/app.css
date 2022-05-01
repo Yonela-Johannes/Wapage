@@ -1,3 +1,20 @@
+.app{
+    /* position: relative; */
+}
+.staticNavbar{
+    width: 100%;
+    top: 0;
+    transition: 5s ease-in;
+    z-index: 20;
+}
+.scrollNavbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background-image: var(--header-background); */
+    z-index: 20;
+    transition: 5s ease-in;
+}
 .navListOne{
     display: flex;
     text-align: center;

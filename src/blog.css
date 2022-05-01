@@ -5,3 +5,33 @@
 .login{
     padding-top: 100px;
 }
+
+@media screen and (min-width: 750px){
+    
+
+    .addPost{
+        position: fixed;
+        right: 0;
+        margin: 30px;
+        bottom: 0;
+        cursor: pointer;
+    }
+    .postIcon {
+        color: rgb(66, 66, 66);
+        font-size: 35px;
+        background-color: pink;
+        border-radius: 15px;
+        padding: 5px;
+        transition: .2s ease-in;
+        border: .2px solid rgb(146, 146, 146);
+    }
+    .postIcon:hover {
+        background-color: transparent;
+    }
+    .createPostModal {
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        z-index: 999;
+    }
+}

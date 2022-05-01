@@ -24,7 +24,7 @@ function Landing() {
                 Book
               </div>
                 <Link to='/blog'>
-                    <span clasName='subMenuItem'>Blog</span>
+                    <span className='subMenuItem'>Blog</span>
                 </Link>
             </div>
       <div className='landingContentContainer'>
