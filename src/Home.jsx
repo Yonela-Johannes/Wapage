@@ -5,17 +5,19 @@ import Footer from './Footer';
 import Landing from './components/Landing';
 import Projects from './components/Projects';
 import MyServices from './components/MyServices';
+import Slider from './components/carousel/Slider';
 import './app.css';
 
 function Home() {
   return (
     <div className='home mainContainer'>
       <div className="landingHome">
-        <Landing />
-        <Main />
+        <Slider />
+        {/* <Landing /> */}
+        {/* <Main /> */}
       </div>
-      <Projects />
-      <MyServices />
+      {/* <Projects /> */}
+      {/* <MyServices /> */}
     </div>
   );
 }
