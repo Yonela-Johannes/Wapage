@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="app">
       <Router>
-        <div className={!scrollNav ? 'staticNavbar' : 'scrollNavbar'}>
+        <div className={'staticNavbar'}>
           <Navbar isAuth={isAuth} />
         </div>
         <Routes>
